@@ -1,1 +1,58 @@
 
+{% extends "base.html" %}
+{% block title %}Home — Tribute to K. Krishna Garu{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>🌟 Tribute to <span>K. Krishna Garu</span></h1>
+    <p>A man of service, integrity, and inspiration to many.</p>
+    <a href="{{ url_for('about') }}" class="btn-primary">Explore His Journey</a>
+  </div>
+  <div class="hero-photo">
+    <img src="{{ url_for('static', filename='images/dad.jpg') }}" alt="K Krishna Garu">
+  </div>
+</section>
+
+<!-- Quote Section -->
+<section class="quote-section">
+  <blockquote>“True greatness lies in helping others rise.”</blockquote>
+  <p>— K. Krishna Garu</p>
+</section>
+
+<!-- Achievements Highlights -->
+<section class="highlights">
+  <h2>Highlights of His Life</h2>
+  <div class="cards">
+    <div class="card">
+<a href="{{ url_for('gallery') }}">
+  <img src="{{ url_for('static', filename='images/besttraffic.jpg') }}" alt="Award">
+</a>
+<h3>Best Traffic Inspector</h3>
+      <p>Recognized multiple times for exemplary dedication and leadership.</p>
+    </div>
+    <div class="card">
+<a href="{{ url_for('gallery') }}">
+  <img src="{{ url_for('static', filename='images/besttraf.jpg') }}" alt="Award">
+</a>
+      <h3>Inspiring Speaker</h3>
+      <p>Delivered powerful speeches motivating people towards education & unity.</p>
+    </div>
+    <div class="card">
+<a href="{{ url_for('gallery') }}">
+  <img src="{{ url_for('static', filename='images/besttraffic1.jpg') }}" alt="Award">
+</a>
+      <h3>Service to Society</h3>
+      <p>Distributed books, uniforms, and essentials to underprivileged communities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Call To Action -->
+<section class="cta-section">
+  <h2>“From humble beginnings to a life of impact.”</h2>
+  <a href="{{ url_for('achievements') }}" class="btn-secondary">View Full Achievements</a>
+</section>
+
+{% endblock %}
