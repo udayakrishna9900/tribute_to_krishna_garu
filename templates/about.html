@@ -1,1 +1,207 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About K. Krishna — Life & Service</title>
+
+  <!-- Link to external CSS in static/css/about.css (recommended) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+
+  <!-- Minimal inline styles as fallback / quick preview -->
+</head>
+<body>
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <img src="{{ url_for('static', filename='images/dad.jpg') }}" alt="K. Krishna - current photo">
+      <div>
+        <h1>K. Krishna</h1>
+        <div class="tag">A public servant • Community leader • Inspiring public speaker</div>
+        <div class="summary">
+          <strong>Summary:</strong> K. Krishna rose from a humble farming background, started his career as a bus conductor then with his determination, dedication towards work, he got promoted as a decorated Traffic Inspector and a community leader who dedicates himself to social service. A follower of Dr. B.R. Ambedkar’s ideals, he has confidently delivered countless speeches, donated educational materials and essentials, and empowered many through service and encouragement.
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <!-- LEFT / MAIN COLUMN -->
+      <section>
+        <!-- QUICK FACTS -->
+        <article class="card" aria-labelledby="facts-heading">
+          <h2 id="facts-heading">Quick facts</h2>
+          <div class="facts">
+            <div><strong>Full name:</strong> K. Krishna</div>
+            <div><strong>Early life:</strong> Born to a farming family; grew up with limited resources but great determination.</div>
+            <div><strong>Profession:</strong> Traffic Inspector (multiple-time Best Traffic Inspector awardee)</div>
+            <div><strong>Recognitions:</strong> Awards & medals received in state capitals including Delhi.</div>
+            <div><strong>Values:</strong> Follows Ambedkar’s ideology; prioritises education, dignity, and service.</div>
+          </div>
+        </article>
+
+        <!-- EARLY LIFE -->
+        <article class="card" aria-labelledby="early-heading" style="margin-top:14px;">
+          <h2 id="early-heading">Early life</h2>
+          <p>
+            K. Krishna was born in a small village to loving parents who worked tirelessly in the fields.
+From childhood, he learned the dignity of labour and the importance of knowledge.
+With limited resources and no guidance, he fought his way through challenges, believing that education and self-discipline were the keys to progress.
+          </p>
+        </article>
+
+        <!-- CAREER & SERVICE -->
+        <article class="card" aria-labelledby="career-heading" style="margin-top:14px;">
+          <h2 id="career-heading">Career & public service</h2>
+          <p>
+            As a Traffic Inspector, Krishna served the public with dedication and earned several accolades — including
+            being selected as "Best Traffic Inspector" many times. He travelled to receive awards in major cities such as Delhi.
+          </p>
+          <p>
+            Beyond his official duties, he initiated and supported many community services: distributing slates and slate pencils,
+            books and school uniforms to children, sarees and dothis to older women, and supplies to people in need.
+          </p>
+        </article>
+
+        <!-- TIMELINE -->
+        <article class="card" aria-labelledby="timeline-heading" style="margin-top:14px;">
+          <h2 id="timeline-heading">Life timeline (highlights)</h2>
+          <ul class="timeline">
+            <li><strong>Childhood:</strong> Grew up in a farmer family; early struggles but strong values.</li>
+            <li><strong>Teenage:</strong> Determined to study; first public talks and local community involvement.</li>
+            <li><strong>Career start:</strong> Started working as a bus conductor.</li>
+            <li><strong>Community giving:</strong> Started regular distributions (slates, slate pencils, books, uniforms, sarees/dothi).</li>
+            <li><strong>Awards & recognition:</strong> Multiple Best Traffic Inspector awards; recognition in Delhi.</li>
+            <li><strong>Now:</strong> Respected leader, public speaker, and proud family man who inspires children and community.</li>
+          </ul>
+        </article>
+
+        <!-- AWARDS -->
+        <article class="card" aria-labelledby="awards-heading" style="margin-top:14px;">
+          <h2 id="awards-heading">Awards & honors</h2>
+          <p>
+            Krishna has received medals and shields for his dedicated service. Notably, he was selected many times as "Best Traffic Inspector"
+            and has travelled to receive awards in Delhi and other cities.
+          </p>
+          <p><em>Suggested display:</em> show images of medals / shields in the gallery below with short captions: date + award name + city.</p>
+        </article>
+
+        <!-- SPEAKING -->
+        <article class="card" aria-labelledby="speaking-heading" style="margin-top:14px;">
+          <h2 id="speaking-heading">Public speaking & leadership</h2>
+          <p>
+            Krishna is a confident speaker with a firm, resonant voice. He has delivered many public speeches on education, social justice,
+            and community development. He motivates everyone—especially his children—to pursue knowledge and better lives.
+          </p>
+        </article>
+
+        <!-- COMMUNITY CONTRIBUTIONS -->
+        <article class="card" aria-labelledby="service-heading" style="margin-top:14px;">
+          <h2 id="service-heading">Community contributions</h2>
+          <ul>
+            <li>Distributed slates and slate pencils to schoolchildren</li>
+            <li>Provided books and uniforms to needy students</li>
+            <li>Donated sarees and dothis to elderly women</li>
+            <li>Organized local drives to help families in need</li>
+          </ul>
+        </article>
+
+        <!-- TESTIMONIALS -->
+        <article class="card" aria-labelledby="testi-heading" style="margin-top:14px;">
+          <h2 id="testi-heading">Family & community testimonials</h2>
+          <blockquote>
+            "He always encouraged us to study and gave us the courage to dream bigger." — <em>Child</em>
+          </blockquote>
+          <blockquote>
+            "An honest officer and a caring human being. A true leader." — <em>Community member</em>
+          </blockquote>
+        </article>
+      </section>
+
+      <!-- RIGHT / SIDEBAR -->
+      <aside>
+        <div class="card">
+  <h3>Photo</h3>
+  <img src="{{ url_for('static', filename='images/dad3.jpg') }}" 
+       alt="Young K. Krishna" 
+       style="width:100%; height:auto; border-radius:12px; display:block; margin:0 auto;">
+  <p style="margin-top:10px;"> </p>
+</div>
+
+
+        <div class="card" style="margin-top:14px;">
+          <h3>Awards spotlight</h3>
+          <p><strong>Best Traffic Inspector</strong><br/>Awarded multiple times — including ceremonies in Delhi.</p>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <h3>Quick contact</h3>
+          <p>Want to add a memory or photo? <a href="/contact">Share a memory</a> (you can create a small contact page later).</p>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <h3>Values</h3>
+          <ul>
+            <li>Education for all</li>
+            <li>Dignity & fairness</li>
+            <li>Service before self</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- GALLERY -->
+    <section style="margin-top:20px;">
+      <div class="card">
+        <h2>Gallery</h2>
+        <div class="gallery">
+  <a href="{{ url_for('static', filename='images/old4.jpg') }}" target="_blank">
+    <img src="{{ url_for('static', filename='images/old4.jpg') }}" alt="Childhood photo">
+  </a>
+  <a href="{{ url_for('static', filename='images/old5.jpg') }}" target="_blank">
+    <img src="{{ url_for('static', filename='images/old5.jpg') }}" alt="Teenage photo">
+  </a>
+  <a href="{{ url_for('static', filename='images/besttra2.jpg') }}" target="_blank">
+    <img src="{{ url_for('static', filename='images/besttra2.jpg') }}" alt="Receiving award">
+  </a>
+  <a href="{{ url_for('static', filename='images/besttraf.jpg') }}" target="_blank">
+    <img src="{{ url_for('static', filename='images/besttraf.jpg') }}" alt="Recent photo">
+  </a>
+</div>
+<p style="margin-top:8px;"><em>Tip:</em> Add captions to each photo describing the year and event.</p>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+      <a class="btn" href="/share-memory">Share a memory / Upload photo</a>
+    </section>
+
+    <footer>
+      © <span id="year"></span> K. Krishna — Dedicated to a life of service.
+    </footer>
+  </main>
+
+  <script>
+    // small script to set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<section class="memory-section">
+  <h2>💌 Share a Memory or Upload a Photo</h2>
+  <p>If you have a special moment or photo with K. Krishna Garu, share it here.</p>
+
+  <form action="/upload" method="POST" enctype="multipart/form-data" class="upload-form">
+    <label>Your Name:</label><br>
+    <input type="text" name="name" placeholder="Your name" required><br><br>
+
+    <label>Your Message:</label><br>
+    <textarea name="message" placeholder="Write your memory..." rows="4" required></textarea><br><br>
+
+    <label>Upload a Photo:</label><br>
+    <input type="file" name="photo" accept="image/*"><br><br>
+
+    <button type="submit" class="btn-primary">Submit Memory</button>
+  </form>
+</section>
