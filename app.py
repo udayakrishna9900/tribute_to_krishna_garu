@@ -1,22 +1,27 @@
+
 from flask import Flask, render_template
 
+# Create the Flask app
 app = Flask(__name__)
 
-@app.route('/')
+# Home page – shows templates/index.html
+@app.route("/")
 def home():
-    return render_template('index.html')
+    return render_template("index.html")
 
-@app.route('/about')
+# Optional extra routes if you use them:
+@app.route("/about")
 def about():
-    return render_template('about.html')
+    return render_template("about.html")
 
-@app.route('/achievements')
+@app.route("/achievements")
 def achievements():
-    return render_template('achievements.html')
+    return render_template("achievements.html")
 
-@app.route('/gallery')
+@app.route("/gallery")
 def gallery():
-    return render_template('gallery.html')
+    return render_template("gallery.html")
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Local run (not used on Render, but nice for your laptop)
+if __name__ == "__main__":
+    app.run(debug=False)
