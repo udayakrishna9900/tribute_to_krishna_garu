@@ -1,57 +1,81 @@
-{% extends "base.html" %}
-{% block title %}Home — Tribute to K. Krishna Garu{% endblock %}
-{% block content %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — Tribute to K. Krishna Garu</title>
 
-<!-- Hero Section -->
-<section class="hero-section">
-  <div class="hero-content">
-    <h1>🌟 Tribute to <span>K. Krishna Garu</span></h1>
-    <p>A man of service, integrity, and inspiration to many.</p>
-    <a href="{{ url_for('about') }}" class="btn-primary">Explore His Journey</a>
-  </div>
-  <div class="hero-photo">
-    <img src="{{ url_for('static', filename='images/dad.jpg') }}" alt="K Krishna Garu">
-  </div>
-</section>
+  <!-- Link to your CSS (adjust path if your CSS file is elsewhere) -->
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <main class="container">
 
-<!-- Quote Section -->
-<section class="quote-section">
-  <blockquote>“True greatness lies in helping others rise.”</blockquote>
-  <p>— K. Krishna Garu</p>
-</section>
+    <!-- Hero Section -->
+    <section class="hero-section" style="display:flex;gap:20px;align-items:center;padding:28px 12px;">
+      <div class="hero-content" style="flex:1;">
+        <h1 style="font-size:2.2rem;">🌟 Tribute to <span>K. Krishna Garu</span></h1>
+        <p>A man of service, integrity, and inspiration to many.</p>
+        <p><a class="btn-primary" href="about.html" style="display:inline-block;margin-top:12px;padding:8px 14px;text-decoration:none;border-radius:6px;">Explore His Journey</a></p>
+      </div>
 
-<!-- Achievements Highlights -->
-<section class="highlights">
-  <h2>Highlights of His Life</h2>
-  <div class="cards">
-    <div class="card">
-<a href="{{ url_for('gallery') }}">
-  <img src="{{ url_for('static', filename='images/besttraffic.jpg') }}" alt="Award">
-</a>
-<h3>Best Traffic Inspector</h3>
-      <p>Recognized multiple times for exemplary dedication and leadership.</p>
-    </div>
-    <div class="card">
-<a href="{{ url_for('gallery') }}">
-  <img src="{{ url_for('static', filename='images/besttraf.jpg') }}" alt="Award">
-</a>
-      <h3>Inspiring Speaker</h3>
-      <p>Delivered powerful speeches motivating people towards education & unity.</p>
-    </div>
-    <div class="card">
-<a href="{{ url_for('gallery') }}">
-  <img src="{{ url_for('static', filename='images/besttraffic1.jpg') }}" alt="Award">
-</a>
-      <h3>Service to Society</h3>
-      <p>Distributed books, uniforms, and essentials to underprivileged communities.</p>
-    </div>
-  </div>
-</section>
+      <div class="hero-photo" style="flex:0 0 260px;">
+        <img src="images/dad.jpg" alt="K Krishna Garu" style="width:100%;height:auto;border-radius:10px;display:block;">
+      </div>
+    </section>
 
-<!-- Call To Action -->
-<section class="cta-section">
-  <h2>“From humble beginnings to a life of impact.”</h2>
-  <a href="{{ url_for('achievements') }}" class="btn-secondary">View Full Achievements</a>
-</section>
+    <!-- Quote Section -->
+    <section class="quote-section" style="padding:12px 18px;">
+      <blockquote style="font-size:1.2rem;margin:0 0 8px 0;">“True greatness lies in helping others rise.”</blockquote>
+      <p style="margin:6px 0 0 0;">— K. Krishna Garu</p>
+    </section>
 
-{% endblock %}
+    <!-- Achievements Highlights -->
+    <section class="highlights" style="padding:18px;">
+      <h2>Highlights of His Life</h2>
+      <div class="cards" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;">
+        <div class="card" style="flex:1 1 250px;padding:12px;border-radius:8px;">
+          <a href="gallery.html">
+            <img src="images/besttraffic.jpg" alt="Award" style="width:100%;height:auto;border-radius:6px;display:block;">
+          </a>
+          <h3 style="margin-top:10px;">Best Traffic Inspector</h3>
+          <p>Recognized multiple times for exemplary dedication and leadership.</p>
+        </div>
+
+        <div class="card" style="flex:1 1 250px;padding:12px;border-radius:8px;">
+          <a href="gallery.html">
+            <img src="images/besttraf.jpg" alt="Award" style="width:100%;height:auto;border-radius:6px;display:block;">
+          </a>
+          <h3 style="margin-top:10px;">Inspiring Speaker</h3>
+          <p>Delivered powerful speeches motivating people towards education & unity.</p>
+        </div>
+
+        <div class="card" style="flex:1 1 250px;padding:12px;border-radius:8px;">
+          <a href="gallery.html">
+            <img src="images/besttraffic1.jpg" alt="Award" style="width:100%;height:auto;border-radius:6px;display:block;">
+          </a>
+          <h3 style="margin-top:10px;">Service to Society</h3>
+          <p>Distributed books, uniforms, and essentials to underprivileged communities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section" style="padding:18px;background:#f7f7f7;border-radius:8px;margin:18px;">
+      <h2 style="margin:0 0 8px 0;">“From humble beginnings to a life of impact.”</h2>
+      <a class="btn-secondary" href="achievements.html" style="display:inline-block;margin-top:8px;padding:8px 14px;text-decoration:none;border-radius:6px;">View Full Achievements</a>
+    </section>
+
+    <footer style="padding:14px 18px;margin-top:18px;border-top:1px solid #eee;">
+      © <span id="year"></span> K. Krishna — Dedicated to a life of service.
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
