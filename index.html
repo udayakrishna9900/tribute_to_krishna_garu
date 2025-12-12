@@ -4,72 +4,66 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Home — Tribute to K. Krishna Garu</title>
-
-  <!-- Link to your CSS (adjust path if your CSS file is elsewhere) -->
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
+  <header style="padding:16px 20px;">
+    <nav>
+      <strong><a href="index.html">Home</a></strong> ·
+      <a href="about.html">About</a> ·
+      <a href="achievements.html">Achievements</a> ·
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section" style="display:flex;gap:20px;align-items:center;padding:28px 12px;">
-      <div class="hero-content" style="flex:1;">
-        <h1 style="font-size:2.2rem;">🌟 Tribute to <span>K. Krishna Garu</span></h1>
-        <p>A man of service, integrity, and inspiration to many.</p>
-        <p><a class="btn-primary" href="about.html" style="display:inline-block;margin-top:12px;padding:8px 14px;text-decoration:none;border-radius:6px;">Explore His Journey</a></p>
+  <main style="max-width:1100px; margin:20px auto; padding:0 18px;">
+    <section class="hero-section" style="display:flex; gap:20px; align-items:center; margin-top:12px;">
+      <div style="flex:1;">
+        <h1 style="font-size:34px; margin:0;">🌟 Tribute to <span>K. Krishna Garu</span></h1>
+        <p style="margin-top:8px;">A man of service, integrity, and inspiration to many.</p>
+        <p><a href="about.html" class="btn-primary">Explore His Journey</a></p>
       </div>
-
-      <div class="hero-photo" style="flex:0 0 260px;">
-        <img src="images/dad.jpg" alt="K Krishna Garu" style="width:100%;height:auto;border-radius:10px;display:block;">
+      <div style="width:260px;">
+        <img src="images/dad.jpg" alt="K Krishna Garu" style="width:100%; border-radius:8px;">
       </div>
     </section>
 
-    <!-- Quote Section -->
-    <section class="quote-section" style="padding:12px 18px;">
-      <blockquote style="font-size:1.2rem;margin:0 0 8px 0;">“True greatness lies in helping others rise.”</blockquote>
-      <p style="margin:6px 0 0 0;">— K. Krishna Garu</p>
+    <section style="margin-top:22px;">
+      <blockquote style="font-size:20px; margin:10px 0 6px 0;">“True greatness lies in helping others rise.”</blockquote>
+      <p>— K. Krishna Garu</p>
     </section>
 
-    <!-- Achievements Highlights -->
-    <section class="highlights" style="padding:18px;">
+    <section class="highlights" style="margin-top:18px;">
       <h2>Highlights of His Life</h2>
-      <div class="cards" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;">
-        <div class="card" style="flex:1 1 250px;padding:12px;border-radius:8px;">
-          <a href="gallery.html">
-            <img src="images/besttraffic.jpg" alt="Award" style="width:100%;height:auto;border-radius:6px;display:block;">
-          </a>
-          <h3 style="margin-top:10px;">Best Traffic Inspector</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:18px;">
+        <div style="flex:1; min-width:220px;">
+          <a href="gallery.html"><img src="images/besttraffic.jpg" alt="Award" style="max-width:100%;"></a>
+          <h3 style="margin:8px 0 4px 0;">Best Traffic Inspector</h3>
           <p>Recognized multiple times for exemplary dedication and leadership.</p>
         </div>
 
-        <div class="card" style="flex:1 1 250px;padding:12px;border-radius:8px;">
-          <a href="gallery.html">
-            <img src="images/besttraf.jpg" alt="Award" style="width:100%;height:auto;border-radius:6px;display:block;">
-          </a>
-          <h3 style="margin-top:10px;">Inspiring Speaker</h3>
+        <div style="flex:1; min-width:220px;">
+          <a href="gallery.html"><img src="images/besttraf.jpg" alt="Award" style="max-width:100%;"></a>
+          <h3 style="margin:8px 0 4px 0;">Inspiring Speaker</h3>
           <p>Delivered powerful speeches motivating people towards education & unity.</p>
         </div>
 
-        <div class="card" style="flex:1 1 250px;padding:12px;border-radius:8px;">
-          <a href="gallery.html">
-            <img src="images/besttraffic1.jpg" alt="Award" style="width:100%;height:auto;border-radius:6px;display:block;">
-          </a>
-          <h3 style="margin-top:10px;">Service to Society</h3>
+        <div style="flex:1; min-width:220px;">
+          <a href="gallery.html"><img src="images/besttraffic1.jpg" alt="Award" style="max-width:100%;"></a>
+          <h3 style="margin:8px 0 4px 0;">Service to Society</h3>
           <p>Distributed books, uniforms, and essentials to underprivileged communities.</p>
         </div>
       </div>
     </section>
 
-    <!-- Call To Action -->
-    <section class="cta-section" style="padding:18px;background:#f7f7f7;border-radius:8px;margin:18px;">
+    <section class="cta-section" style="margin-top:22px; padding:16px; background:#f6f6f6; border-radius:8px;">
       <h2 style="margin:0 0 8px 0;">“From humble beginnings to a life of impact.”</h2>
-      <a class="btn-secondary" href="achievements.html" style="display:inline-block;margin-top:8px;padding:8px 14px;text-decoration:none;border-radius:6px;">View Full Achievements</a>
+      <p><a href="achievements.html" class="btn-secondary">View Full Achievements</a></p>
     </section>
 
-    <footer style="padding:14px 18px;margin-top:18px;border-top:1px solid #eee;">
+    <footer style="margin-top:28px; border-top:1px solid #eee; padding-top:12px;">
       © <span id="year"></span> K. Krishna — Dedicated to a life of service.
     </footer>
-
   </main>
 
   <script>
@@ -77,5 +71,4 @@
   </script>
 </body>
 </html>
-
 
