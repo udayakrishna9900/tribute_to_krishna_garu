@@ -1,117 +1,137 @@
-{% extends "base.html" %}
-{% block title %}Achievements — K. Krishna Garu{% endblock %}
-{% block content %}
 
-<!-- Header -->
-<section class="achievements-header">
-  <h1>🏆 Achievements of <span>K. Krishna Garu</span></h1>
-  <p>Honoring his journey of service, integrity, and leadership that inspires many.</p>
-</section>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Achievements — K. Krishna Garu</title>
 
-<!-- ========================== -->
-<!-- 🏅 Awards & Recognition -->
-<!-- ========================== -->
-<section class="achievements-section">
-  <h2>🏅 Awards & Recognition</h2>
-  <p>Recognized multiple times for his excellence and contribution as a Traffic Inspector and community leader.</p>
+  <!-- Link to your CSS - make sure css/about.css exists; change if needed -->
+  <link rel="stylesheet" href="css/about.css">
 
-  <div class="achievement-gallery">
-    <img src="{{ url_for('static', filename='images/awards.jpg') }}" alt="Awards">
-    <img src="{{ url_for('static', filename='images/besttraffic.jpg') }}" alt="Best Traffic">
-    <img src="{{ url_for('static', filename='images/bestdad1.jpg') }}" alt="Best Dad Award">
-    <img src="{{ url_for('static', filename='images/besttraffic1.jpg') }}" alt="Best Traffic Inspector">
-    <img src="{{ url_for('static', filename='images/collector.jpg') }}" alt="Collector Recognition">
-    </div>
-</section>
+  <!-- Minimal fallback styles so page looks good even if CSS missing -->
+  <style>
+    body{font-family:Georgia, "Times New Roman", serif;color:#111;margin:0;padding:20px;background:#fff}
+    .container{max-width:1000px;margin:0 auto}
+    h1{font-size:2rem;margin:6px 0}
+    h2{font-size:1.2rem;margin:12px 0}
+    .achievements-header p{margin-top:6px;color:#333}
+    .achievement-gallery{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .achievement-gallery img{width:calc(33% - 10px);height:auto;border-radius:6px;object-fit:cover}
+    .achievements-section{margin-top:18px}
+    @media (max-width:700px){
+      .achievement-gallery img{width:calc(50% - 10px)}
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
 
-<!-- ========================== -->
-<!-- 🎤 Public Speaking -->
-<!-- ========================== -->
-<section class="achievements-section">
-  <h2>🎤 Motivational Speeches</h2>
-  <p>His powerful speeches have inspired countless people towards education, self-respect, and unity.</p>
+    <!-- Header -->
+    <section class="achievements-header">
+      <h1>🏆 Achievements of <span>K. Krishna Garu</span></h1>
+      <p>Honoring his journey of service, integrity, and leadership that inspires many.</p>
+    </section>
 
-  <div class="achievement-gallery">
-    <img src="{{ url_for('static', filename='images/dadspe.jpg') }}" alt="Speech">
-    <img src="{{ url_for('static', filename='images/dspe1.jpg') }}" alt="Speech 1">
-    <img src="{{ url_for('static', filename='images/dspe2.jpg') }}" alt="Speech 2">
-    <img src="{{ url_for('static', filename='images/dspe3.jpg') }}" alt="Speech 3">
-    <img src="{{ url_for('static', filename='images/motivation.jpg') }}" alt="Motivation Speech">
-    <img src="{{ url_for('static', filename='images/motivation1.jpg') }}" alt="Motivation Speech 1">
-    <img src="{{ url_for('static', filename='images/motivation2.jpg') }}" alt="Motivation Speech 2">
-  </div>
-</section>
+    <!-- Awards & Recognition -->
+    <section class="achievements-section">
+      <h2>🏅 Awards & Recognition</h2>
+      <p>Recognized multiple times for his excellence and contribution as a Traffic Inspector and community leader.</p>
 
-<!-- ========================== -->
-<!-- 👮‍♂️ Leadership & Dedication -->
-<!-- ========================== -->
-<section class="achievements-section">
-  <h2>👮‍♂️ Leadership & Dedication</h2>
-  <p>As a respected officer, he led by example — upholding discipline, service, and humanity in every action.</p>
+      <div class="achievement-gallery">
+        <img src="images/awards.jpg" alt="Awards">
+        <img src="images/besttraffic.jpg" alt="Best Traffic">
+        <img src="images/bestdad1.jpg" alt="Best Dad Award">
+        <img src="images/besttraffic1.jpg" alt="Best Traffic Inspector">
+        <img src="images/collector.jpg" alt="Collector Recognition">
+      </div>
+    </section>
 
-  <div class="achievement-gallery">
-    <img src="{{ url_for('static', filename='images/leader.jpg') }}" alt="Leadership">
-    <img src="{{ url_for('static', filename='images/leader1.jpg') }}" alt="Leadership 1">
-    <img src="{{ url_for('static', filename='images/leader3.jpg') }}" alt="Leadership 3">
-    <img src="{{ url_for('static', filename='images/leader4.jpg') }}" alt="Leadership 4">
-    <img src="{{ url_for('static', filename='images/patriatism.jpg') }}" alt="Patriotism">
-    <img src="{{ url_for('static', filename='images/road.jpg') }}" alt="Road Safety">
-  </div>
-</section>
+    <!-- Motivational Speeches -->
+    <section class="achievements-section">
+      <h2>🎤 Motivational Speeches</h2>
+      <p>His powerful speeches have inspired countless people towards education, self-respect, and unity.</p>
 
-<!-- ========================== -->
-<!-- 🎓 Education & Students -->
-<!-- ========================== -->
-<section class="achievements-section">
-  <h2>🎓 Uplifting Students through Education</h2>
-  <p>From distributing books and uniforms to supporting schools — he believed that education is the strongest weapon for change.</p>
+      <div class="achievement-gallery">
+        <img src="images/dadspe.jpg" alt="Speech">
+        <img src="images/dspe1.jpg" alt="Speech 1">
+        <img src="images/dspe2.jpg" alt="Speech 2">
+        <img src="images/dspe3.jpg" alt="Speech 3">
+        <img src="images/motivation.jpg" alt="Motivation Speech">
+        <img src="images/motivation1.jpg" alt="Motivation Speech 1">
+        <img src="images/motivation2.jpg" alt="Motivation Speech 2">
+      </div>
+    </section>
 
-  <div class="achievement-gallery">
-    <img src="{{ url_for('static', filename='images/sch.jpg') }}" alt="School Visit">
-    <img src="{{ url_for('static', filename='images/sch1.jpg') }}" alt="School Event">
-    <img src="{{ url_for('static', filename='images/schb1.jpg') }}" alt="Book Distribution 1">
-    <img src="{{ url_for('static', filename='images/schb2.jpg') }}" alt="Book Distribution 2">
-    <img src="{{ url_for('static', filename='images/schbuni1.jpg') }}" alt="Uniform Distribution 1">
-    <img src="{{ url_for('static', filename='images/schbuni2.jpg') }}" alt="Uniform Distribution 2">
-    <img src="{{ url_for('static', filename='images/schbuni3.jpg') }}" alt="Uniform Distribution 3">
-  </div>
-</section>
+    <!-- Leadership & Dedication -->
+    <section class="achievements-section">
+      <h2>👮‍♂️ Leadership & Dedication</h2>
+      <p>As a respected officer, he led by example — upholding discipline, service, and humanity in every action.</p>
 
-<!-- ========================== -->
-<!-- ❤️ Service to Society -->
-<!-- ========================== -->
-<section class="achievements-section">
-  <h2>❤️ Service to Society</h2>
-  <p>His acts of kindness — from helping elders to serving the underprivileged — reflect his true spirit of humanity.</p>
+      <div class="achievement-gallery">
+        <img src="images/leader.jpg" alt="Leadership">
+        <img src="images/leader1.jpg" alt="Leadership 1">
+        <img src="images/leader3.jpg" alt="Leadership 3">
+        <img src="images/leader4.jpg" alt="Leadership 4">
+        <img src="images/patriatism.jpg" alt="Patriotism">
+        <img src="images/road.jpg" alt="Road Safety">
+      </div>
+    </section>
 
-  <div class="achievement-gallery">
-    <img src="{{ url_for('static', filename='images/service.jpg') }}" alt="Service">
-    <img src="{{ url_for('static', filename='images/service1.jpg') }}" alt="Service Event 1">
-    <img src="{{ url_for('static', filename='images/service2.jpg') }}" alt="Service Event 2">
-    <img src="{{ url_for('static', filename='images/service3.jpg') }}" alt="Service Event 3">
-    <img src="{{ url_for('static', filename='images/service4.jpg') }}" alt="Service Event 4">
-    <img src="{{ url_for('static', filename='images/spiritual1.jpg') }}" alt="Spiritual">
-    <img src="{{ url_for('static', filename='images/spiritual3.jpg') }}" alt="Spiritual 3">
-    <img src="{{ url_for('static', filename='images/yogaday.jpg') }}" alt="Yoga Day">
-  </div>
-</section>
+    <!-- Education & Students -->
+    <section class="achievements-section">
+      <h2>🎓 Uplifting Students through Education</h2>
+      <p>From distributing books and uniforms to supporting schools — he believed that education is the strongest weapon for change.</p>
 
-<!-- ========================== -->
-<!-- 💙 Ambedkar Inspiration -->
-<!-- ========================== -->
-<section class="achievements-section">
-  <h2>💙 Inspiration from Dr. B. R. Ambedkar</h2>
-  <p>He deeply follows the teachings of Dr. Ambedkar — promoting equality, education, and justice for all.</p>
+      <div class="achievement-gallery">
+        <img src="images/sch.jpg" alt="School Visit">
+        <img src="images/sch1.jpg" alt="School Event">
+        <img src="images/schb1.jpg" alt="Book Distribution 1">
+        <img src="images/schb2.jpg" alt="Book Distribution 2">
+        <img src="images/schbuni1.jpg" alt="Uniform Distribution 1">
+        <img src="images/schbuni2.jpg" alt="Uniform Distribution 2">
+        <img src="images/schbuni3.jpg" alt="Uniform Distribution 3">
+      </div>
+    </section>
 
-  <div class="achievement-gallery">
-    <img src="{{ url_for('static', filename='images/amb.jpg') }}" alt="Ambedkar">
-    <img src="{{ url_for('static', filename='images/amb1.jpg') }}" alt="Ambedkar 1">
-    <img src="{{ url_for('static', filename='images/amb2.jpg') }}" alt="Ambedkar 2">
-    <img src="{{ url_for('static', filename='images/amb3.jpg') }}" alt="Ambedkar 3">
-    <img src="{{ url_for('static', filename='images/amb4.jpg') }}" alt="Ambedkar 4">
-    <img src="{{ url_for('static', filename='images/amb5.jpg') }}" alt="Ambedkar 5">
-    <img src="{{ url_for('static', filename='images/amb9.jpg') }}" alt="Ambedkar 9">
-  </div>
-</section>
+    <!-- Service to Society -->
+    <section class="achievements-section">
+      <h2>❤️ Service to Society</h2>
+      <p>His acts of kindness — from helping elders to serving the underprivileged — reflect his true spirit of humanity.</p>
 
-{% endblock %}
+      <div class="achievement-gallery">
+        <img src="images/service.jpg" alt="Service">
+        <img src="images/service1.jpg" alt="Service Event 1">
+        <img src="images/service2.jpg" alt="Service Event 2">
+        <img src="images/service3.jpg" alt="Service Event 3">
+        <img src="images/service4.jpg" alt="Service Event 4">
+        <img src="images/spiritual1.jpg" alt="Spiritual">
+        <img src="images/spiritual3.jpg" alt="Spiritual 3">
+        <img src="images/yogaday.jpg" alt="Yoga Day">
+      </div>
+    </section>
+
+    <!-- Ambedkar Inspiration -->
+    <section class="achievements-section">
+      <h2>💙 Inspiration from Dr. B. R. Ambedkar</h2>
+      <p>He deeply follows the teachings of Dr. Ambedkar — promoting equality, education, and justice for all.</p>
+
+      <div class="achievement-gallery">
+        <img src="images/amb.jpg" alt="Ambedkar">
+        <img src="images/amb1.jpg" alt="Ambedkar 1">
+        <img src="images/amb2.jpg" alt="Ambedkar 2">
+        <img src="images/amb3.jpg" alt="Ambedkar 3">
+        <img src="images/amb4.jpg" alt="Ambedkar 4">
+        <img src="images/amb5.jpg" alt="Ambedkar 5">
+        <img src="images/amb9.jpg" alt="Ambedkar 9">
+      </div>
+    </section>
+
+    <footer style="margin-top:26px;border-top:1px solid #eee;padding-top:12px;">
+      © <span id="year"></span> K. Krishna — Dedicated to a life of service.
+    </footer>
+  </main>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
